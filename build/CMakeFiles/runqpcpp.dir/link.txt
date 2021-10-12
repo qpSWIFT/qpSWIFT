@@ -1,1 +1,0 @@
-/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/runqpcpp.dir/demo/runqpcpp.cpp.o  -o ../bin/exec/runqpcpp ../bin/arc/libqpSWIFT.a -lm -lrt -ldl 
