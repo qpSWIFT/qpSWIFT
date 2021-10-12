@@ -1,0 +1,13 @@
+/usr/local/lib/libqpSWIFT.a
+/usr/local/lib/libqpSWIFT.so
+/usr/local/include/qpSWIFT/amd.h
+/usr/local/include/qpSWIFT/amd_internal.h
+/usr/local/include/qpSWIFT/SuiteSparse_config.h
+/usr/local/include/qpSWIFT/ldl.h
+/usr/local/include/qpSWIFT/GlobalOptions.h
+/usr/local/include/qpSWIFT/timer.h
+/usr/local/include/qpSWIFT/Auxilary.h
+/usr/local/include/qpSWIFT/qpSWIFT.h
+/usr/local/lib/cmake/qpSWIFT/qpSWIFT-targets.cmake
+/usr/local/lib/cmake/qpSWIFT/qpSWIFT-targets-release.cmake
+/usr/local/lib/cmake/qpSWIFT/qpSWIFTConfig.cmake
