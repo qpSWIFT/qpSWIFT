@@ -40,3 +40,5 @@
     qp_int Permutineq[5] = {4, 2, 0, 3, 1};
 
 #endif
+
+/*! @file */
