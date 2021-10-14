@@ -50,7 +50,7 @@
 #                                      || >0            -- Print everything
 #           -> OUTPUT  : OUTPUT LEVELS ||  1            -- sol + basicInfo
 #                                      ||  2            -- sol + basicInfo + advInfo
-#                                      ||  (anything)   -- sol                  
+#                                      ||  (anything else)   -- sol                  
 #
 #   Note: Options,A and b are not mandatory
 #   Note: All the fileds of Options are also not mandatory
