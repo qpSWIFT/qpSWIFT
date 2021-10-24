@@ -88,7 +88,7 @@ char helpstr[] = {
 "                    : 3 : Unknown Problem in Solver \n"
 "      -> Iterations : Number of Iterations \n"
 "      -> Setup Time : Invloves setting up QP; solving for initial guess \n"
-"      -> Solve Time : Solution Time in ms \n"
+"      -> Solve Time : Solution Time \n"
 " \n"
 "   adv_info  has five fields \n"
 "      -> Fval       : Objective Value of the QP \n"

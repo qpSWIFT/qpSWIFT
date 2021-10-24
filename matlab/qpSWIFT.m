@@ -73,7 +73,7 @@
 %                    : 3 : Unknown Problem in Solver
 %      -> Iterations : Number of Iterations
 %      -> Setup Time : Invloves setting up QP; solving for initial guess
-%      -> Solve Time : Solution Time in ms
+%      -> Solve Time : Solution Time
 %
 %   adv_info  has five fields
 %      -> Fval       : Objective Value of the QP
