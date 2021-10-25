@@ -219,6 +219,7 @@ QP *QP_SETUP(qp_int n, qp_int m, qp_int p, qp_int *Pjc, qp_int *Pir, qp_real *Pp
 	}
 
 	myQP->kkt->Pinv = (qp_int *)MALLOC((myQP->m + myQP->n + myQP->p) * sizeof(qp_int));
+	myQP->kkt->UPattern = (qp_int *)MALLOC((myQP->m + myQP->n + myQP->p) * sizeof(qp_int));
 
 	/* Initialise the solver */
 	if (!kkt_initialize(myQP))
@@ -440,6 +441,7 @@ QP *QP_SETUP_dense(qp_int n, qp_int m, qp_int p, qp_real *Ppr, qp_real *Apr, qp_
 	}
 
 	myQP->kkt->Pinv = (qp_int *)MALLOC((myQP->m + myQP->n + myQP->p) * sizeof(qp_int));
+	myQP->kkt->UPattern = (qp_int *)MALLOC((myQP->m + myQP->n + myQP->p) * sizeof(qp_int));
 
 	/* Initialise the solver */
 	if (!kkt_initialize(myQP))

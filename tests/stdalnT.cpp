@@ -223,45 +223,45 @@ TEST(standAloneTests, func_SparseMatrixSetup)
 
 TEST(standAloneTests, func_formkktmatrix_fullS)
 {
-    smat P, A, G;
-    char diag_msg[50];
-    /* P and G Matrices only */
-    SparseMatrixSetup(P_m, P_n, P_nnz, P_jc, P_ir, P_pr, &P);
-    SparseMatrixSetup(A_m, A_n, A_nnz, A_jc, A_ir, A_pr, &A);
-    SparseMatrixSetup(G_m, G_n, G_nnz, G_jc, G_ir, G_pr, &G);
-    smat kkt;
-    qp_int kkt_m = P_n + A_m + G_m;
-    qp_int kkt_n = P_n + A_m + G_m;
-    qp_int kkt_nnz = P_nnz + 2 * A_nnz + 2 * G_nnz + G_m;
+    // smat P, A, G;
+    // char diag_msg[50];
+    // /* P and G Matrices only */
+    // SparseMatrixSetup(P_m, P_n, P_nnz, P_jc, P_ir, P_pr, &P);
+    // SparseMatrixSetup(A_m, A_n, A_nnz, A_jc, A_ir, A_pr, &A);
+    // SparseMatrixSetup(G_m, G_n, G_nnz, G_jc, G_ir, G_pr, &G);
+    // smat kkt;
+    // qp_int kkt_m = P_n + A_m + G_m;
+    // qp_int kkt_n = P_n + A_m + G_m;
+    // qp_int kkt_nnz = P_nnz + 2 * A_nnz + 2 * G_nnz + G_m;
 
-    qp_int *kkt_ir, *kkt_jc;
-    qp_real *kkt_pr;
+    // qp_int *kkt_ir, *kkt_jc;
+    // qp_real *kkt_pr;
 
-    kkt_ir = (qp_int *)MALLOC(kkt_nnz * sizeof(qp_int));
-    kkt_jc = (qp_int *)MALLOC((kkt_n + 1) * sizeof(qp_int));
-    kkt_pr = (qp_real *)MALLOC(kkt_nnz * sizeof(qp_real));
+    // kkt_ir = (qp_int *)MALLOC(kkt_nnz * sizeof(qp_int));
+    // kkt_jc = (qp_int *)MALLOC((kkt_n + 1) * sizeof(qp_int));
+    // kkt_pr = (qp_real *)MALLOC(kkt_nnz * sizeof(qp_real));
 
-    smat At;
-    qp_int Atjc[3], Atir[4];
-    qp_real Atpr[4];
-    SparseMatrixSetup(A_n, A_m, A_nnz, Atjc, Atir, Atpr, &At);
-    SparseMatrixTranspose(&A, &At);
+    // smat At;
+    // qp_int Atjc[3], Atir[4];
+    // qp_real Atpr[4];
+    // SparseMatrixSetup(A_n, A_m, A_nnz, Atjc, Atir, Atpr, &At);
+    // SparseMatrixTranspose(&A, &At);
 
-    smat Gt;
-    qp_int Gtjc[4], Gtir[5];
-    qp_real Gtpr[5];
-    SparseMatrixSetup(G_n, G_m, G_nnz, Gtjc, Gtir, Gtpr, &Gt);
-    SparseMatrixTranspose(&G, &Gt);
+    // smat Gt;
+    // qp_int Gtjc[4], Gtir[5];
+    // qp_real Gtpr[5];
+    // SparseMatrixSetup(G_n, G_m, G_nnz, Gtjc, Gtir, Gtpr, &Gt);
+    // SparseMatrixTranspose(&G, &Gt);
 
-    SparseMatrixSetup(kkt_m, kkt_n, kkt_nnz, kkt_ir, kkt_jc, kkt_pr, &kkt);
-    formkktmatrix_full(&P, &G, &A, &Gt, &At, &kkt);
-    ASSERT_TRUE(validate_smat(&kkt, diag_msg)) << diag_msg;
+    // SparseMatrixSetup(kkt_m, kkt_n, kkt_nnz, kkt_ir, kkt_jc, kkt_pr, &kkt);
+    // formkktmatrix_full(&P, &G, &A, &Gt, &At, &kkt);
+    // ASSERT_TRUE(validate_smat(&kkt, diag_msg)) << diag_msg;
 
-    //ASSERT_TRUE(validate_kktmatrix(&kkt, &P, &A, &G, diag_msg)) << diag_msg;
+    // //ASSERT_TRUE(validate_kktmatrix(&kkt, &P, &A, &G, diag_msg)) << diag_msg;
 
-    FREE(kkt_ir);
-    FREE(kkt_jc);
-    FREE(kkt_pr);
+    // FREE(kkt_ir);
+    // FREE(kkt_jc);
+    // FREE(kkt_pr);
 }
 
 int main(int argc, char **argv)

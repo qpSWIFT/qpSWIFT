@@ -1023,8 +1023,7 @@ qp_int kkt_initialize(QP *myQP)
 
 	qp_int Flag = ldlinitialsolve(myQP->kkt, myQP->delta);
 
-	myQP->kkt->UPattern = (qp_int *)MALLOC(myQP->kkt->kktmatrix->n * sizeof(qp_int));
-	test_reach(myQP->kkt->Parent, myQP->kkt->Pinv, myQP->kkt->UPattern, n, m, p);
+	/* test_reach(myQP->kkt->Parent, myQP->kkt->Pinv, myQP->kkt->UPattern, n, m, p); */
 
 	if (Flag)
 	{
