@@ -38,7 +38,7 @@ qpSWIFT is designed to solve Quadratic Programs of the following form \
   - Quadratic Program with only equality constraints
 
 ## Note
-**The project is still in active development. Feedback is highly appreciated. For any queries and suggestions please write to haewonpark@kaist.ac.kr**
+**The project is still in active development. Feedback is highly appreciated. For any queries and suggestions please write to agp19@vt.edu, yanran@mit.edu or haewonpark@kaist.ac.kr**
 
 ## Citing qpSWIFT
 If you like qpSWIFT and are using it in your work, please cite the following paper\
