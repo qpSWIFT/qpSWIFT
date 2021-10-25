@@ -14,7 +14,7 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin/lib)
 
 
 #### ---- Options ---- ####
-option (QPTESTS "Build Unit Tests" ON)
+option (QPTESTS "Build Unit Tests" OFF)
 option (QPSHAREDLIB "Build Unit Tests" ON)
 option (QPDEMOS "Build C and C++ Demos" ON)
 
