@@ -3,7 +3,6 @@
 
 #include <gtest/gtest.h>
 #include "qpSWIFT.h"
-#include "parser.hpp"
 
 qp_int A_m = 2;
 qp_int A_n = 2;
@@ -26,19 +25,15 @@ qp_int G_ir[5] = {0, 1, 2, 1, 2};
 qp_int G_jc[3] = {0, 3, 5};
 qp_real G_pr[5] = {1.0, 2.0, 3.0, 1.0, 4.0};
 
-qp_real c[];
-qp_real b[];
-qp_real h[];
+// qp_real c[];
+// qp_real b[];
+// qp_real h[];
 
-qp_real
-
-    class standAloneTests : public ::testing::Test
+class standAloneTests : public ::testing::Test
 {
 private:
 public:
     char diag_msg[50];
-
-    void copy_data(standalone_data *new_data) { data = new_data; };
 
     smat P, A, G;
     smat Pt, At, Gt;
@@ -46,13 +41,14 @@ public:
     static int margc;
     static char *margv[];
 
+    //void copy_data(standalone_data *new_data) { data = new_data; };
+
 protected:
     // void static init(standalone_data *new_data) { data = new_data; };
     standAloneTests(/* args */);
     ~standAloneTests();
-    standalone_data *data;
-    parser psr;
 
+    //  standalone_data *data;
     // void SetUp()
     // {
     //     parser psr;

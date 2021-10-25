@@ -185,41 +185,41 @@ TEST(standAloneTests, func_SparseMatrixSetup)
     ASSERT_TRUE(validate_smat(&P, diag_msg)) << diag_msg;
 }
 
-TEST(standAloneTests, func_formkktmatrix_full)
-{
-    smat P, G;
-    char diag_msg[50];
-    /* P and G Matrices only */
-    SparseMatrixSetup(P_m, P_n, P_nnz, P_jc, P_ir, P_pr, &P);
-    SparseMatrixSetup(G_m, G_n, G_nnz, G_jc, G_ir, G_pr, &G);
-    smat kkt;
-    qp_int kkt_m = P_n + G_m;
-    qp_int kkt_n = P_n + G_m;
-    qp_int kkt_nnz = P_nnz + 2 * G_nnz + G_m;
+// TEST(standAloneTests, func_formkktmatrix_full)
+// {
+//     smat P, G;
+//     char diag_msg[50];
+//     /* P and G Matrices only */
+//     SparseMatrixSetup(P_m, P_n, P_nnz, P_jc, P_ir, P_pr, &P);
+//     SparseMatrixSetup(G_m, G_n, G_nnz, G_jc, G_ir, G_pr, &G);
+//     smat kkt;
+//     qp_int kkt_m = P_n + G_m;
+//     qp_int kkt_n = P_n + G_m;
+//     qp_int kkt_nnz = P_nnz + 2 * G_nnz + G_m;
 
-    qp_int *kkt_ir, *kkt_jc;
-    qp_real *kkt_pr;
+//     qp_int *kkt_ir, *kkt_jc;
+//     qp_real *kkt_pr;
 
-    kkt_ir = (qp_int *)MALLOC(kkt_nnz * sizeof(qp_int));
-    kkt_jc = (qp_int *)MALLOC((kkt_n + 1) * sizeof(qp_int));
-    kkt_pr = (qp_real *)MALLOC(kkt_nnz * sizeof(qp_real));
+//     kkt_ir = (qp_int *)MALLOC(kkt_nnz * sizeof(qp_int));
+//     kkt_jc = (qp_int *)MALLOC((kkt_n + 1) * sizeof(qp_int));
+//     kkt_pr = (qp_real *)MALLOC(kkt_nnz * sizeof(qp_real));
 
-    smat Gt;
-    qp_int Gtjc[4], Gtir[5];
-    qp_real Gtpr[5];
-    SparseMatrixSetup(G_n, G_m, G_nnz, Gtjc, Gtir, Gtpr, &Gt);
-    SparseMatrixTranspose(&G, &Gt);
-    SparseMatrixSetup(kkt_m, kkt_n, kkt_nnz, kkt_ir, kkt_jc, kkt_pr, &kkt);
-    formkktmatrix_full(&P, &G, NULL, &Gt, NULL, &kkt);
-    print_smat(&kkt);
+//     smat Gt;
+//     qp_int Gtjc[4], Gtir[5];
+//     qp_real Gtpr[5];
+//     SparseMatrixSetup(G_n, G_m, G_nnz, Gtjc, Gtir, Gtpr, &Gt);
+//     SparseMatrixTranspose(&G, &Gt);
+//     SparseMatrixSetup(kkt_m, kkt_n, kkt_nnz, kkt_ir, kkt_jc, kkt_pr, &kkt);
+//     formkktmatrix_full(&P, &G, NULL, &Gt, NULL, &kkt);
+//     print_smat(&kkt);
 
-    ASSERT_TRUE(validate_smat(&kkt, diag_msg)) << diag_msg;
-    ASSERT_TRUE(validate_kktmatrix(&kkt, &P, NULL, &G, diag_msg)) << diag_msg;
+//     ASSERT_TRUE(validate_smat(&kkt, diag_msg)) << diag_msg;
+//     ASSERT_TRUE(validate_kktmatrix(&kkt, &P, NULL, &G, diag_msg)) << diag_msg;
 
-    FREE(kkt_ir);
-    FREE(kkt_jc);
-    FREE(kkt_pr);
-}
+//     FREE(kkt_ir);
+//     FREE(kkt_jc);
+//     FREE(kkt_pr);
+// }
 
 TEST(standAloneTests, func_formkktmatrix_fullS)
 {
