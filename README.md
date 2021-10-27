@@ -6,7 +6,7 @@ Light-weight sparse Quadratic Programming Solver
 qpSWIFT is light-weight sparse Quadratic Programming solver targetted for embedded and robotic applications. It employs Primal-Dual Interioir Point method with Mehrotra Predictor corrector step and Nesterov Todd scaling. For solving the linear system of equations, sparse LDL' factorization is used along with approximate minimum degree heuristic to minimize fill-in of the factorizations
 
 ## Wiki
-For more information, please check the repo [wiki](https://github.com/abhishek-pandala/qpSWIFT_Mock_Tests/wiki)
+For more information, please check the repo wiki (in progress).
 
 ## Problem Structure
 qpSWIFT is designed to solve Quadratic Programs of the following form \
