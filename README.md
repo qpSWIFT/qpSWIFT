@@ -23,9 +23,9 @@ qpSWIFT is designed to solve Quadratic Programs of the following form \
     + x86_64
     + ARM
   - Support for multiple interfaces
-    + [C/C++](https://github.com/abhishek-pandala/qpSWIFT/tree/master/src)
-    + [Matlab](https://github.com/abhishek-pandala/qpSWIFT/tree/master/matlab)
-    + [Simulink](https://github.com/abhishek-pandala/qpSWIFT/tree/master/simulink)
+    + [C/C++](https://github.com/qpSWIFT/qpSWIFT/tree/main/src)
+    + [Matlab](https://github.com/qpSWIFT/qpSWIFT/tree/main/matlab)
+    + [Simulink](https://github.com/qpSWIFT/qpSWIFT/tree/main/simulink)
 
 
 <!---
