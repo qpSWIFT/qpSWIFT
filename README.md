@@ -6,13 +6,13 @@ Light-weight sparse Quadratic Programming Solver
 qpSWIFT is light-weight sparse Quadratic Programming solver targetted for embedded and robotic applications. It employs Primal-Dual Interioir Point method with Mehrotra Predictor corrector step and Nesterov Todd scaling. For solving the linear system of equations, sparse LDL' factorization is used along with approximate minimum degree heuristic to minimize fill-in of the factorizations
 
 ## Wiki
-For more information, please check the repo wiki (in progress).
+For more information, please check the repo [wiki](https://github.com/qpSWIFT/qpSWIFT/wiki).
 
 ## Problem Structure
 qpSWIFT is designed to solve Quadratic Programs of the following form \
-`min. 0.5*x'Px + c'x`\
-`s.t  Ax = b `\
-`     Gx <= h `
+> <img src="https://render.githubusercontent.com/render/math?math=\min_x \hspace{5pt}0.5x^\top P x"> + <img src="https://render.githubusercontent.com/render/math?math=c^\top x"><br />
+> <img src="https://render.githubusercontent.com/render/math?math=s.t.\hspace{5pt}Ax=b"><br/>
+> <img src="https://render.githubusercontent.com/render/math?math=\hspace{20pt}Gx\leq h">
 
 ## Features
  - Written in ANSI-C
@@ -25,18 +25,10 @@ qpSWIFT is designed to solve Quadratic Programs of the following form \
   - Support for multiple interfaces
     + [c/c++](https://github.com/qpSWIFT/qpSWIFT/tree/main/src)
     + [python](https://github.com/qpSWIFT/qpSWIFT/tree/main/python)
-    + [Matlab](https://github.com/qpSWIFT/qpSWIFT/tree/main/matlab)
-    + [Simulink](https://github.com/qpSWIFT/qpSWIFT/tree/main/simulink)
+    + [matlab](https://github.com/qpSWIFT/qpSWIFT/tree/main/matlab)
+    + [simulink](https://github.com/qpSWIFT/qpSWIFT/tree/main/simulink)
 
 
-<!---
-# Case Studies
-  - BAMBY
-  - Ghost Robotics Vision60
--->
-
-## Future Updates
-  - Quadratic Program with only equality constraints
 
 ## Note
 **The project is still in active development. Feedback is highly appreciated. For any queries and suggestions please write to agp19@vt.edu, yanran@mit.edu or haewonpark@kaist.ac.kr**
