@@ -1,4 +1,10 @@
 # qpSWIFT
+![github_release](https://img.shields.io/github/release-date/qpSWIFT/qpSWIFT)
+![license](https://img.shields.io/github/license/qpSWIFT/qpSWIFT)
+
+![stars](https://img.shields.io/github/stars/qpSWIFT/qpSWIFT)
+![github_downloads](https://img.shields.io/github/downloads/qpSWIFT/qpSWIFT/total)
+
 Light-weight sparse Quadratic Programming Solver
 
 
