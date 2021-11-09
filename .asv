@@ -5,4 +5,4 @@ matlab/*.mexw64
 python/build
 .vscode
 doc/html
-simulink/slprj
+sim
