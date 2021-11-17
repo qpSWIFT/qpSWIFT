@@ -3,7 +3,7 @@
 ![license](https://img.shields.io/github/license/qpSWIFT/qpSWIFT)
 
 ![stars](https://img.shields.io/github/stars/qpSWIFT/qpSWIFT)
-![github_downloads](https://img.shields.io/github/downloads/qpSWIFT/qpSWIFT/total)
+
 
 Light-weight sparse Quadratic Programming Solver
 
@@ -15,7 +15,7 @@ qpSWIFT is light-weight sparse Quadratic Programming solver targetted for embedd
 For more information, please check the repo [wiki](https://github.com/qpSWIFT/qpSWIFT/wiki).
 
 ## Problem Structure
-qpSWIFT is designed to solve Quadratic Programs of the following form 
+qpSWIFT is designed to solve Quadratic Programs of the following form
 > <img src="https://render.githubusercontent.com/render/math?math=\min_x \hspace{5pt}0.5x^\top P x"> + <img src="https://render.githubusercontent.com/render/math?math=c^\top x"><br />
 > <img src="https://render.githubusercontent.com/render/math?math=s.t.\hspace{5pt}Ax=b"><br/>
 > <img src="https://render.githubusercontent.com/render/math?math=\hspace{20pt}Gx\leq h">
