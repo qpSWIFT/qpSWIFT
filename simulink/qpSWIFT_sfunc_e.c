@@ -138,6 +138,18 @@ static void mdlOutputs(SimStruct *S, int_T tid)
 
 
     myQP = QP_SETUP_dense(n, m, p, *in_P , *in_A, *in_G, *in_c, *in_h, *in_b, NULL, COLUMN_MAJOR_ORDERING);
+    
+    /* ---------------------- Change the following settings as desired ---------------------- */
+    /* -------------------------------------------------------------------------------------- */
+    /* myQP->settings->maxit   = <desired_value> ;// Maximum number of Iterations of QP       */ 
+    /* myQP->settings->reltol  = <desired_value> ;// Relative Tolerance                       */
+    /* myQP->settings->abstol  = <desired_value> ;// Absolute Tolerance                       */
+    /* myQP->settings->sigma   = <desired_value> ;// sigma desired                            */
+    /* myQP->settings->verbose = <desired_value> ;// Verbose Levels || 0 :: No Print          */
+                                                  // >0 :: Print Everything */
+    /* -------------------------------------------------------------------------------------- */
+    /* ---------------------- Change the following settings as desired ---------------------- */
+    
     if (myQP != NULL)
     {
 

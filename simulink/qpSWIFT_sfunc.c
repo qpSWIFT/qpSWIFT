@@ -10,7 +10,6 @@
 #include "simstruc.h"
 
 
-
 #define NV 3 /*Output Needed */
 
 static void mdlInitializeSizes(SimStruct *S) /* Init sizes array */
@@ -124,11 +123,33 @@ static void mdlOutputs(SimStruct *S, int_T tid)
     size_c = ssGetInputPortWidth(S, 1); // c
     size_G = ssGetInputPortWidth(S, 2); // G
     size_h = ssGetInputPortWidth(S, 3); // h
-;
+
+    
     n = (qp_int)size_c;
     m = (qp_int)size_h;
 
+
+    
+    
+    
+    
+    
+    
+    
+    
     myQP = QP_SETUP_dense(n, m, 0, *in_P , NULL, *in_G, *in_c, *in_h, NULL, NULL, COLUMN_MAJOR_ORDERING);
+      
+    /* ---------------------- Change the following settings as desired ---------------------- */
+    /* -------------------------------------------------------------------------------------- */
+    /* myQP->settings->maxit   = <desired_value> ;// Maximum number of Iterations of QP       */ 
+    /* myQP->settings->reltol  = <desired_value> ;// Relative Tolerance                       */
+    /* myQP->settings->abstol  = <desired_value> ;// Absolute Tolerance                       */
+    /* myQP->settings->sigma   = <desired_value> ;// sigma desired                            */
+    /* myQP->settings->verbose = <desired_value> ;// Verbose Levels || 0 :: No Print          */
+                                                  // >0 :: Print Everything */
+    /* -------------------------------------------------------------------------------------- */
+    /* ---------------------- Change the following settings as desired ---------------------- */
+    
     if (myQP != NULL)
     {
 
