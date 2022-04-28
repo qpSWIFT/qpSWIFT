@@ -83,6 +83,8 @@ extern "C"
  * qpSWIFT is light-weight sparse Quadratic Programming solver targetted for embedded and robotic applications. It employs Primal-Dual Interioir Point method with Mehrotra Predictor
  * corrector step and Nesterov Todd scaling. For solving the linear system of equations, sparse LDL' factorization is used along with approximate minimum degree heuristic to minimize fill-in
  * of the factorizations
+ * @section download_sec Download
+ * qpSWIFT can be downloaded from the following link <https://github.com/qpSWIFT/qpSWIFT>
  * @section feat_sec Features
  * - Written in ANSI-C
  * - Fully functional Quadratic Programming solver for embedded applications
