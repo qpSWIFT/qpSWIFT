@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+title: "qpSWIFT"
+message: "If you are using this software, please cite the article following preferred-citation method "
+type: software
+authors:
+  - email: agp19@vt.edu
+    given-names: Abhishek Goud
+    family-names: Pandala
+    orcid: 'https://orcid.org/0000-0002-7424-5508'
+  - given-names: Yanran
+    family-names: Ding
+    email: yanran@mit.edu
+    orcid: 'https://orcid.org/0000-0003-4959-1174'
+  - given-names: Hae-Won
+    family-names: Park
+    email: haewonpark@kaist.ac.kr
+    orcid: 'https://orcid.org/0000-0001-6130-6589'
+identifiers:
+  - type: url
+    value: 'https://github.com/qpSWIFT/qpSWIFT'
+    description: Github Code Repository
+repository-code: 'https://github.com/qpSWIFT/qpSWIFT'
+url: 'https://qpswift.github.io/'
+keywords:
+  - quadratic-programming
+  - optimization
+  - interior-point-method
+  - robotics
+license: GPL-3.0
+
+## Preferred Citation Method
+
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Pandala"
+    given-names: "Abhishek Goud"
+  - family-names: "Ding"
+    given-names: "Yanran"
+  - family-names: "Park"
+    given-names: "Hae-Won"
+  title: "qpSWIFT: A Real-Time Sparse Quadratic Program Solver for Robotic Applications"
+  journal: "IEEE Robotics and Automation Letters"
+  start: 3355 # First page number
+  end: 3362 # Last page number
+  volume: 4
+  issue: 4
+  year: 2019
+  doi: 10.1109/LRA.2019.2926664
+  url: https://doi.org/10.1109/LRA.2019.2926664
