@@ -14,8 +14,8 @@
 
 qp_real *getptr(PyArrayObject *ar)
 {
-    //qp_real *m = (qp_real *)PyArray_DATA(PyArray_GETCONTIGUOUS(ar));
-    // return m;
+    // qp_real *m = (qp_real *)PyArray_DATA(PyArray_GETCONTIGUOUS(ar));
+    //  return m;
 
     // PyArrayObject *tmp_arr;
 
@@ -29,8 +29,8 @@ qp_real *getptr(PyArrayObject *ar)
     tmp_arr = PyArray_GETCONTIGUOUS(ar);
     new_owner = (PyArrayObject *)PyArray_Cast(tmp_arr, NPY_DOUBLE);
     Py_DECREF(tmp_arr);
-    //qp_real *ptr = PyArray_DATA(new_owner);
-    //  Py_DECREF(new_owner);
+    // qp_real *ptr = PyArray_DATA(new_owner);
+    //   Py_DECREF(new_owner);
     return new_owner;
 }
 
@@ -205,7 +205,7 @@ static PyObject *method_qpSWIFT(PyObject *self, PyObject *args, PyObject *kwargs
         if (opts_abstol)
         {
             Py_INCREF(opts_abstol);
-            if (PyFloat_Check(opts_abstol) && PyFloat_AsDouble(opts_abstol) < 1.0 && PyFloat_AsDouble(opts_maxiter) > 0.0)
+            if (PyFloat_Check(opts_abstol) && PyFloat_AsDouble(opts_abstol) < 1.0 && PyFloat_AsDouble(opts_abstol) > 0.0)
             {
                 inopts.abstol = (qp_real)PyFloat_AsDouble(opts_abstol);
             }
@@ -281,8 +281,8 @@ static PyObject *method_qpSWIFT(PyObject *self, PyObject *args, PyObject *kwargs
             else
             {
                 PyErr_WarnEx(PyExc_UserWarning, "output must be non-negative, using the default value", 1);
-                //PyErr_SetString(PyExc_TypeError, "verbose must be non-negative integer, using the default value");
-                //return NULL;
+                // PyErr_SetString(PyExc_TypeError, "verbose must be non-negative integer, using the default value");
+                // return NULL;
             }
             Py_DECREF(opts_output);
         }
