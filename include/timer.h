@@ -1,6 +1,12 @@
 
 #ifndef __TIMER_H__
 #define __TIMER_H__
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
 #include "GlobalOptions.h"
 
 /*! qp timers and their defintions */
@@ -65,6 +71,11 @@ void tic(qp_timer* t);
  * 
  */
 qp_real toc(qp_timer* t);
+
+#ifdef __cplusplus
+}
+#endif
+
 #endif
 /* END IFDEF __TIMER_H__ */
 

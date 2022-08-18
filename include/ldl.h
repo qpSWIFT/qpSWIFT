@@ -14,6 +14,11 @@
 #ifndef __LDL_H__
 #define __LDL_H__
 
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
 #include "GlobalOptions.h"
 
 void LDL_symbolic(qp_int n, qp_int Ap[],
@@ -68,5 +73,9 @@ qp_int LDL_valid_matrix(qp_int n,
 #define LDL_SUB_VERSION 2
 #define LDL_SUBSUB_VERSION 6
 #define LDL_VERSION LDL_VERSION_CODE(LDL_MAIN_VERSION,LDL_SUB_VERSION)
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
