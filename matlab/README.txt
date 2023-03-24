@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
-Compilation -> Type Swift_make('qpSWIFT') in your matlab command window
+Compilation -> Type Swift_make('qpSWIFT_mex') in your matlab command window
             -> Add the mex file to your working directory to use qpSWIFT
 -------------------------------------------------------------------------------
 Usage       -> Instructions on how to use the mex-file are given in qpSWIFT.m
