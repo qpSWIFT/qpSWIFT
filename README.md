@@ -16,9 +16,11 @@ For more information, please check the repo [wiki](https://github.com/qpSWIFT/qp
 
 ## Problem Structure
 qpSWIFT is designed to solve Quadratic Programs of the following form
-> <img src="https://render.githubusercontent.com/render/math?math=\min_x \hspace{5pt}0.5x^\top P x"> + <img src="https://render.githubusercontent.com/render/math?math=c^\top x"><br />
-> <img src="https://render.githubusercontent.com/render/math?math=s.t.\hspace{5pt}Ax=b"><br/>
-> <img src="https://render.githubusercontent.com/render/math?math=\hspace{20pt}Gx\leq h">
+```math
+\displaylines{\min_x \hspace{5pt}0.5x^\top P x + c^\top x \\
+\text{s.t.}\hspace{5pt}Ax=b \\
+\hspace{20pt}Gx\leq h}
+```
 
 ## Features
  - Written in ANSI-C
