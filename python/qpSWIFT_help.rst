@@ -17,6 +17,8 @@
 #     res = qpSWIFT.run(c,h,P,G,A,b,opts)
 #			or
 #	  res = qpSWIFT.run(c,h,P,G,opts=opts)
+#			or
+#	  res = qpSWIFT.run_sparse(c,h,P,G,A,b,opts)
 #
 #        minimize    0.5*x'Px + c'x
 #        subject to  Ax = b

@@ -49,11 +49,6 @@ Permut = amd(kkt) - 1;
  * @param[in]  b		b vector
  * @param[in]  sigma_d	entering parameter; default value is 0.0
  * @param[in]  Permut	permutation vector of the KKT matrix; can be set to NULL to use the default AMD ordering
- * 						
- * 
- * -> takes input in dense matrix format only \n
- * -> no error checking is performed \n
- * 
  * 
  */
 

@@ -1,5 +1,5 @@
 import numpy as np 
-import qpSWIFT
+import qpSWIFT_sparse_bindings as qpSWIFT
 
 
 ###  Solver Options

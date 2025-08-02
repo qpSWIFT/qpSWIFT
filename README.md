@@ -1,3 +1,13 @@
+# Python Bindings for qpSWIFT
+
+These are custom Python bindings for a sparse interface for the [qpSWIFT](https://github.com/qpSWIFT/qpSWIFT) QP solver.
+
+> qpSWIFT is developed and maintained by its original authors [here](https://github.com/qpSWIFT/qpSWIFT) and is licensed under the GNU General Public License v3.0 (GPL-3.0).  
+> This project provides Python bindings and is independently maintained.
+
+---
+
+## Original qpSWIFT README
 # qpSWIFT
 ![github_release](https://img.shields.io/github/release-date/qpSWIFT/qpSWIFT)
 ![license](https://img.shields.io/github/license/qpSWIFT/qpSWIFT)
